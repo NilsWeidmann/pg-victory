@@ -8,7 +8,7 @@ title: VICToRy (Visual Interactive Consistency in Tolerant Rule-Based Systems)
 The development and maintenance of large software systems remains a complex, error-prone task. Model-Driven Engineering (MDE) addresses complexity by establishing suitable abstractions (models) and treating them as primary artefacts in the development process; models are used for validation, code generation, and testing purposes. Amongst other advantages, this MDE approach enables domain experts such as engineers or business analysts to specify and validate their models without requiring advanced programming skills. A well-known formalism in the MDE solution domain are Triple Graph Grammars (TGGs), which are used to specify consistency relations over different models represented as graphs.  Consistency is defined in a rule-based manner, providing a grammar that describes how the involved models are to be changed consistently
 A wide range of possible application scenarios can be found for rule-based approaches such as TGGs. Taking the example of Smart Home systems, the rule depicted below describes that “consistency” is to be maintained by opening the window blinds, turning on the light bulbs in the house, and playing some nice music when the garage door opens (meaning that the home owner just arrived).  A smart home system can thus be viewed as a consistency restorer that takes a specification of consistency (e.g., in form of a TGG), and reacts to incoming events (garage door opens) to restore consistency (by opening the window blinds, switching the lights on, and playing nice music). 
 
-![Smart Home Example]({{ "/assets/motivating-example.png" | absolute_url }})
+![Smart Home Example]({{ "/assets/motivating-example.png" }})
 
 ## Problem Statement
 
