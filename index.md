@@ -1,89 +1,49 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: VICToRy (Visual Interactive Consistency in Tolerant Rule-Based Systems)
 ---
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+## Motivation and Introduction
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+The development and maintenance of large software systems remains a complex, error-prone task. Model-Driven Engineering (MDE) addresses complexity by establishing suitable abstractions (models) and treating them as primary artefacts in the development process; models are used for validation, code generation, and testing purposes. Amongst other advantages, this MDE approach enables domain experts such as engineers or business analysts to specify and validate their models without requiring advanced programming skills. A well-known formalism in the MDE solution domain are Triple Graph Grammars (TGGs), which are used to specify consistency relations over different models represented as graphs.  Consistency is defined in a rule-based manner, providing a grammar that describes how the involved models are to be changed consistently
+A wide range of possible application scenarios can be found for rule-based approaches such as TGGs. Taking the example of Smart Home systems, the rule depicted below describes that “consistency” is to be maintained by opening the window blinds, turning on the light bulbs in the house, and playing some nice music when the garage door opens (meaning that the home owner just arrived).  A smart home system can thus be viewed as a consistency restorer that takes a specification of consistency (e.g., in form of a TGG), and reacts to incoming events (garage door opens) to restore consistency (by opening the window blinds, switching the lights on, and playing nice music). 
 
-## Setup Guide
+## Problem Statement
 
-### Fork this repository
+Consistency management is an important (sub)task required for many MDE tools. It subsumes checking for consistency, and restoring consistency by propagating updates to the respective other models. These tasks are to be performed in an automated manner, i.e. the user specifies input models in a specific format (often as XML files) and hands them over to the application. The tool attempts to restore consistency and notifies the user if the operation was successful. The intermediate steps of the operations are, however, often hidden with the consequence that the obtained result, even if it is consistent, remains incomprehensible to the user.  Furthermore, restoring complete consistency is sometimes hard or even impossible to achieve, and might be undesirable, i.e., users might prefer to be informed about possible choices and current inconsistencies.
 
-[Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Fork` button on the top right of the page.
+## Project Goals 
 
-### Rename your forked repository
+The goal of the project group is to increase the usability of eMoflon::IBeX, a TGG-based consistency management tool, by making the consistency restoration process debuggable in the sense that (1) all automated steps are suitable visualised, and (2) the user is offered the chance to take interactive decisions when multiple options are available.  As current research indicates that tolerant systems tend to be more understandable and therefore more trustworthy for users, a final goal would be to allow the user to view all current inconsistencies and to decide if and which inconsistencies are to be tolerated temporarily.
 
-Here we have two possibilities:
+## Milestones 
+*	Helpful visualisation of consistency management steps taken by eMoflon::IBeX
+*	Concept for enabling interactive user decisions
+*	Concept for representing inconsistencies to the user in a scalable manner
+*	Evaluation and testing using various practical application scenarios and case studies
 
-* **You want a user or organization website**
+## Learning Outcome
+*	Plugin development with Eclipse
+*	Experience with MDE technologies including the Eclipse Modelling Framework (EMF), code generation with Xtend templates, consistency management with eMoflon::IBeX 
+*	Professional software development (continuous integration tools, versioning control systems, bug and issue tracking system, …)
+*	Project management, planning and self-organisation within a team
+*	Presentation and documentation of your ideas, results and plans to fellow team members and supervisors
+*	Learn to brainstorm and evaluate your own creative ideas
 
-  In this case your website's URL will be `http://<your username>.github.io` where `<your username>` is your Github user name.
+## Prerequisites
+*	Sound programming skills in an object-oriented language, preferably Java
+* Basic knowledge about the concepts of MDE
+*	Experience in the area of plugin development and the Eclipse Modeling Framework (EMF) are beneficial but not absolutely necessary
+*	Motivation to work in a team, self-organise yourself and be creative
+*	Formal requirements to participate in this course 
 
-  Go in the `Settings` page of your repository and rename it to `<your username>.github.io`.
+## Optional but helpful prior knowledge
+*	Lectures: Fundamentals of Model-Driven Engineering (FMDE), Model-Driven Software Development (MDSD), Modellbasierte Softwareentwicklung (MBSE, Bachelor)
+*	Seminars: Advanced Model-Based Techniques, Maintaining Consistency in Model-Driven Engineering
 
-* **You want a project website**
-
-  In this case your website's URL will be `http://<your username>.github.io/<whatever you want>` where `<whatever you want>` can be any valid name for a Github repository.
-
-  Go in the `Settings` page of your repository and rename it to `<whatever you want>`.
-
-### Activate Github Pages on your repository
-
-Go in the `Settings` page of your repository, in the `Github Pages`, under the `Source` parameter, choose `master branch` then `Save`.
-
-### That's it
-
-Your Github Pages website with customizable Bootstrap 4 is now up and running, you can access it using the URL displayed by Github in the `Github Pages` settings.
-
-## Customization Guide
-
-### Modify the configuration
-
-You should at least edit the `_config.yml` file to edit your website's metadata, like the title, description and repository URL.
-
-### Customize your theme
-
-Let's be honest, this theme uses a vanilla version of Bootstrap 4 and an unmodified Bootstrap is quite unpleasant to the eye. You want to change that.
-
-You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website, possibly referring to the [Bootstrap documentation](https://getbootstrap.com/) or the [Jekyll documentation](https://jekyllrb.com/) when needed. This is a normal part of web development and it is outside the scope of this guide.
-
-But if you don't know where to start I can recommend you to import a starting theme from [Bootswatch](https://bootswatch.com/).
-
-* Go on [Bootswatch](https://bootswatch.com/) and choose a theme that you like.
-* Using the top bar, download its `_variables.scss` and `_bootswatch.scss` files.
-* Copy the content of `_variables.scss` in `_sass/_variables.scss`.
-* Copy the content of `_bootswatch.scss` in `_sass/_bootstrap_customization.scss`.
-
-That's it, you now have a totally different appearance compared to a vanilla Bootstrap 4.
-
-### Modify the content
-
-You probably don't want the present guide to be the front page of your website, so you should edit the `index.md` file. You probably also want to edit or delete the `CONTRIBUTING.md`, `README.md` and `LICENSE.md` files.
-
-Aside from that you can of course create new pages and posts like with any Jekyll website by refering to the [Jekyll documentation](https://jekyllrb.com/).
-
-### Run Jekyll on your computer to speed up testing
-
-Editing your website's content or theme directly on Github is completely possible but, due to the time Github Pages takes to update your website, it will probably be much more effective to work using a local Jekyll installation.
-
-To do so:
-
-* Install the [requirements for Jekyll](https://jekyllrb.com/docs/installation/).
-* Type `bundle install` at the root of your project to install the necessary Ruby dependencies.
-* Type `bundle exec jekyll serve` to launch the test Jekyll web server that will re-compile your work if you edit it.
-* You can then open `http://localhost:4000` in your web browser to see your work-in-progress website.
-
-Please note that, to ensure maximum compatibility with Github Pages, the `Gemfile` of this project references the `github-pages` gem, not Jekyll directly. This implies some differences in behavior compared to the official documentation of Jekyll.
-
-## Known issues
-
-* Bootstrap 4 should normally be post-processed using [Autoprefixer](https://github.com/postcss/autoprefixer). Even if it is possible to use autoprefixer with Jekyll, it is not possible with a classic Github Pages installation without adding some kind of pre-processing before publication. Since this project mostly aims compatibility with Github Pages I prefer to keep it that way. The consequences of this choice is that some Bootstrap features could not work as expected on older browsers.
-
-## Websites using Bootstrap 4 Github Pages
-
-* [My personal blog](https://nicolas-van.github.io/)
+## References
+*	eMoflon handbook:
+** [Part 1 (Meta Modelling)](https://paper.dropbox.com/doc/Meta-Modelling-with-eMoflonIBeX-zyOqELGZ0X9jL85TAs7pf)
+** [Part 2 (Unidirectional Model Transformation)](https://paper.dropbox.com/doc/Unidirectional-Model-Transformation-with-eMoflonIBeX-siVjGl9SaMSuBnBYEv6cG)
+** [Part 3 (Bidirectional Model Transformation)](https://paper.dropbox.com/doc/Bidirectional-Model-Transformation-with-eMoflonIBeX-GxyQmS2198CgxBhOCj8Hv)
+*	[How to write an Eclipse Debugger](https://www.eclipse.org/articles/Article-Debugger/how-to.html)
