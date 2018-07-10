@@ -9,7 +9,7 @@ The development and maintenance of large software systems remains a complex, err
 A wide range of possible application scenarios can be found for rule-based approaches such as TGGs. Taking the example of Smart Home systems, the rule depicted below describes that “consistency” is to be maintained by opening the window blinds, turning on the light bulbs in the house, and playing some nice music when the garage door opens (meaning that the home owner just arrived).  A smart home system can thus be viewed as a consistency restorer that takes a specification of consistency (e.g., in form of a TGG), and reacts to incoming events (garage door opens) to restore consistency (by opening the window blinds, switching the lights on, and playing nice music). 
 
 <p align="center">
-<img width="400" src="/assets/motivating-example.png">
+<img width="400" src="/blob/master/assets/motivating-example.png">
 </p>
 
 ## Problem Statement
