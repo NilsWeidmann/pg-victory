@@ -46,8 +46,8 @@ The goal of the project group is to increase the usability of eMoflon::IBeX, a T
 *	Seminars: Advanced Model-Based Techniques, Maintaining Consistency in Model-Driven Engineering
 
 ## References
-*	eMoflon handbook:
-  * [Part 1 (Meta Modelling)](https://paper.dropbox.com/doc/Meta-Modelling-with-eMoflonIBeX-zyOqELGZ0X9jL85TAs7pf)
-  * [Part 2 (Unidirectional Model Transformation)](https://paper.dropbox.com/doc/Unidirectional-Model-Transformation-with-eMoflonIBeX-siVjGl9SaMSuBnBYEv6cG)
-  * [Part 3 (Bidirectional Model Transformation)](https://paper.dropbox.com/doc/Bidirectional-Model-Transformation-with-eMoflonIBeX-GxyQmS2198CgxBhOCj8Hv)
-*	[How to write an Eclipse Debugger](https://www.eclipse.org/articles/Article-Debugger/how-to.html)
+-	eMoflon handbook
+    - [Part 1 (Meta Modelling)](https://paper.dropbox.com/doc/Meta-Modelling-with-eMoflonIBeX-zyOqELGZ0X9jL85TAs7pf)
+    - [Part 2 (Unidirectional Model Transformation)](https://paper.dropbox.com/doc/Unidirectional-Model-Transformation-with-eMoflonIBeX-siVjGl9SaMSuBnBYEv6cG)
+    - [Part 3 (Bidirectional Model Transformation)](https://paper.dropbox.com/doc/Bidirectional-Model-Transformation-with-eMoflonIBeX-GxyQmS2198CgxBhOCj8Hv)
+-	[How to write an Eclipse Debugger](https://www.eclipse.org/articles/Article-Debugger/how-to.html)
