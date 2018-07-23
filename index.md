@@ -5,7 +5,7 @@ title: VICToRy (Visual Interactive Consistency in Tolerant Rule-Based Systems)
 
 This web page gives an overview of the project group VICToRy, starting in winter term 2018/19 at Paderborn University.
 The slides of the presentation on 16.07.2018 can be downloaded [here](./assets/victory.pdf).
-Note that a formless letter of motivation must be sent by **24.08.2018** to [Nils Weidmann](nilsweid@mail.upb.de) to participate in this project group!   
+Note that a formless letter of motivation must be sent by **24.08.2018** to [Nils Weidmann](<nilsweid@mail.upb.de>) to participate in this project group!   
 
 ## Motivation and Introduction
 
