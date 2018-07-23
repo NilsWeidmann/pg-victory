@@ -3,6 +3,8 @@ layout: page
 title: VICToRy (Visual Interactive Consistency in Tolerant Rule-Based Systems)
 ---
 
+The slides of the presentation on 16.07.2018 can be downloaded [here](./assets/victory.pdf) # It works!
+
 ## Motivation and Introduction
 
 The development and maintenance of large software systems remains a complex, error-prone task. Model-Driven Engineering (MDE) addresses complexity by establishing suitable abstractions (models) and treating them as primary artefacts in the development process; models are used for validation, code generation, and testing purposes. Amongst other advantages, this MDE approach enables domain experts such as engineers or business analysts to specify and validate their models without requiring advanced programming skills. A well-known formalism in the MDE solution domain are Triple Graph Grammars (TGGs), which are used to specify consistency relations over different models represented as graphs.  Consistency is defined in a rule-based manner, providing a grammar that describes how the involved models are to be changed consistently
